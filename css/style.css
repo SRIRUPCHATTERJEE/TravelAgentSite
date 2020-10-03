@@ -1,0 +1,263 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* logo settings */
+#logo{
+    margin: 10px 15px;
+}
+#logo img{
+    width:90px;
+    height: 90px;
+    
+}
+/* navbar settings */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    left:0px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: rgb(193, 232, 241);
+    display: block;
+    text-decoration: none;
+    padding: 25px 23px;
+    border-radius: 35px;
+    font-family: 'Crimson Text', serif;
+    transition: all 0.6s ease-in 0.2s;
+}
+#navbar ul li a:hover{
+    color:rgb(0, 110, 255);
+    background-color: rgb(190, 248, 243);
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* home settings */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 130px 120px;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+#home h1{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 3.5rem;
+    padding: 12px 12px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../images/maldives-1993704_1920.jpg);
+    height: 850px;
+    top:0px;
+    /* left:0px; */
+    /* right:0px; */
+    width:100%;
+    z-index: -1;
+    opacity: 0.90;   
+}
+
+#home p{
+    font-size: 1.6rem;
+    font-family: 'Dancing Script', cursive;
+    padding: 2px;
+    margin-bottom:14px;
+    justify-content: center;
+    align-items: center;
+}
+/* font-family: 'Crimson Text', serif; */
+
+/* destinations settings */
+#destinations{
+    background-color: wheat;
+}
+#destinations h1{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Crimson Text', serif;
+    font-size: 3.5rem;
+}
+.destinations_container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-rows: repeat(auto-fill,1fr);
+    grid-gap: 1rem;
+    padding-bottom: 20px;
+}
+.box{
+    margin:10px;
+    padding:15px;
+    text-align: center;
+    border-radius: 13px;
+    height:275px;
+    width: 400px;
+}
+.box:hover{
+    transform: scale(1.2);
+}
+#morocco{
+    background: url(../images/marrakech-4500910_1920.jpg) no-repeat transparent center/cover;  
+}
+#india{
+    background: url(../images/taj-mahal-1030894_1920.jpg) no-repeat  transparent center/cover;
+}
+#paris{
+    background: url(../images/eiffel-tower-1149926_1920.jpg) no-repeat center center/cover;  
+}
+
+#norway{
+    background: url(../images/travel-1749508_1920.jpg) no-repeat center center/cover;  
+}
+#turkey{
+    background: url(../images/turkey.jpg) no-repeat center center/cover;  
+}
+#switzerland{
+    background: url(../images/lake-5534341_1920.jpg) no-repeat center center/cover;  
+}
+.box h2{
+    font-size: 1.5rem;
+    padding:8px;
+    font-family: 'Anton', sans-serif;
+}
+.box p{
+    font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
+}
+/* about us setting */
+.aboutuscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(375px,1fr));
+    position: relative;
+}
+.aboutuscontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url(../images/imprint-418597_1920.jpg) no-repeat center center/cover;
+}
+.ceo{
+    text-align: center;
+    /* padding: 20px; */
+}
+.ceo p{
+    font-family: 'Dancing Script', cursive;
+    padding: 45px 75px 15px 75px;
+}
+.ceo img{
+    padding: 20px;
+    height: 150px;
+    width: 100px;
+}
+.partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gridpattern{
+    padding: 12px;
+    margin:25px
+}
+#goibibo img{
+    height: 100px;
+    width: 150px;
+}
+#mmt img{
+    height:100px ;
+    width: 150px;
+    
+}
+#oyo img{
+    height:90px ;
+    width: 150px;
+    
+}
+/* contact us settings */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(../images/phone-612061_1920.jpg) no-repeat center center/cover;
+}
+#contactbox{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+#contactbox input,#contactbox textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border:2px solid black;
+}
+#contactbox form{
+    width:40%;
+}
+#contactbox label{
+    font-size: 1.3rem;
+    font-family: 'Anton', sans-serif;
+    
+}
+footer{
+    background: black;
+    color: blanchedalmond;
+    padding: 8px 18px;;
+}
+
+
+/* utility classes */
+.headingprim{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 2.8rem;
+    padding: 12px 12px;
+}
+.textcenter{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+.btn{
+    display: contents;
+    text-decoration: underline;
+    color: rgb(245, 129, 75);
+    cursor: pointer;
+    padding: 13px;
+    margin:15px;
+    font-size: 1.7rem;
+    font-family: 'Crimson Text', serif;
+}
